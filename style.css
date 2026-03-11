@@ -318,7 +318,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .main-nav {
     display: none; position: absolute;
-    top: 68px; left: 0; right: 0;
+    top: 72px; left: 0; right: 0;
     background: var(--white);
     border-bottom: 1px solid var(--border);
     padding: 1rem 2rem 1.5rem;
