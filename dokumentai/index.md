@@ -3,5 +3,11 @@ layout: page
 title: Dokumentai
 ---
 
-- [Asmens duomenų apsaugos politika](/dokumentai/asmens-duomenu-apsaugos-politika)
-- [Slapukų politika](/dokumentai/slapuku-politika)
+{% assign dokumentai = site.posts | where: "category", "dokumentas" %}
+{% for doc in dokumentai %}
+
+## [{{ doc.title }}]({{ doc.url }})
+
+{{ doc.excerpt }}
+
+{% endfor %}
