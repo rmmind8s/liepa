@@ -196,18 +196,30 @@ article a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2.5% 2.5% 0;
-  overflow: hidden;
+  display: flex;
+  gap: 2em;
 }
 
 .widget-area {
-  width: 30%;
-  margin-right: 5%;
-  float: left;
+  flex: 1;
   padding: 20px 20px 10px;
 }
 
-.widget-area:last-child {
-  margin-right: 0;
+@media (max-width: 640px) {
+  .footer-widgets {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .widget-area {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .widget-area:last-child {
+    border-bottom: none;
+  }
 }
 
 .widget-title {
