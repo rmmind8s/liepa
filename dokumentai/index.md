@@ -6,7 +6,7 @@ title: Dokumentai
 {% assign dokumentai = site.posts | where: "category", "dokumentas" %}
 {% for doc in dokumentai %}
 
-## [{{ doc.title }}]({{ doc.url }})
+## [{{ doc.title }}]({{ site.baseurl }}{{ doc.url }})
 
 {{ doc.excerpt }}
 
