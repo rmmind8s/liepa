@@ -6,9 +6,9 @@
     <p class="site-description">Teisinės paslaugos</p>
   </div>
   <nav class="main-navigation">
-    <a href="{{ site.baseurl }}/veikla">Veikla</a>
-    <a href="{{ site.baseurl }}/aktualijos">Aktualijos</a>
-    <a href="{{ site.baseurl }}/dokumentai">Dokumentai</a>
-    <a href="{{ site.baseurl }}/bendraukime">Bendraukime</a>
+    <a href="{{ site.baseurl }}/veikla"{% if page.url contains '/veikla' %} class="active"{% endif %}>Veikla</a>
+    <a href="{{ site.baseurl }}/aktualijos"{% if page.url contains '/aktualijos' %} class="active"{% endif %}>Aktualijos</a>
+    <a href="{{ site.baseurl }}/dokumentai"{% if page.url contains '/dokumentai' %} class="active"{% endif %}>Dokumentai</a>
+    <a href="{{ site.baseurl }}/bendraukime"{% if page.url contains '/bendraukime' %} class="active"{% endif %}>Bendraukime</a>
   </nav>
 </header>
