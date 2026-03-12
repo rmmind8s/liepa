@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
   background: #fff;
   color: #1a1a2e;
 }
@@ -120,46 +122,58 @@ body {
 
 /* ── COMMON PAGES ─────────────────────────────────── */
 
+
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3rem;
   background: #fff;
-  border-bottom: 1px solid #e8edf5;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
-.site-logo img {
+.site-branding {
+  padding: 0 1.6em 1.6em;
+}
+
+.site-branding img {
   width: 350px;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
-.site-nav {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+.main-navigation {
+  padding: 1.6em 2.5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.site-nav a {
+.main-navigation a {
+  display: inline-block;
   text-decoration: none;
-  color: #3a3a3a;
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0.4rem 0.9rem;
-  border-radius: 4px;
-  letter-spacing: 0.01em;
-  transition: color 0.2s, background 0.2s;
+  color: #495762;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-right: 1.6em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
-.site-nav a:hover {
-  color: #8193a1;
-  background: #f4f6f8;
+.main-navigation a:last-child {
+  margin-right: 0;
 }
 
-.site-nav a.active {
+.main-navigation a:hover,
+.main-navigation a:focus {
   color: #8193a1;
+  border-bottom-color: #8193a1;
+}
+
+.main-navigation a.active {
+  color: #8193a1;
+  border-bottom-color: currentColor;
 }
 
 main {
