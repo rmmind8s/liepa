@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Bendraukime
+permalink: /kontaktai/
 ---
 
 ## Kontaktai

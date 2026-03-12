@@ -71,6 +71,10 @@ Sritys, kuriose galime padėti:
 - konsultacijos sutarčių sudarymo ir vykdymo klausimais;
 - pretenzijų perkančiosioms organizacijoms, skundų Viešųjų pirkimų tarnybai parengimas.
 
+## Konsultacijos {#konsultacijos}
+
+Teikiame bendras teisines konsultacijas verslo ir fiziniams asmenims visais teisiniais klausimais.
+
 ## Finansų teisė {#finansu-teise}
 
 - konsultavimas bei praktinė pagalba finansų įstaigų steigimo, pertvarkymo, reorganizavimo, likvidavimo klausimais, su tuo susijusių dokumentų rengimas;
