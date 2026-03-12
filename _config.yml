@@ -1,3 +1,7 @@
-title: LegisPeritus
+title: UAB Legisperitus
+description: Profesionalios teisinės paslaugos verslui ir fiziniams asmenims. Bendrovių teisė, sutarčių rengimas, mokesčių konsultacijos.
+url: https://rmmind8s.github.io
 baseurl: /liepa
+lang: lt
+author: UAB Legisperitus
 permalink: /aktualijos/:slug/

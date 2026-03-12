@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% if page.title %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+{% else %}
+  <title>{{ site.title }}</title>
+{% endif %}
+
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+{% elsif page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+{% else %}
+  <meta name="description" content="{{ site.description }}">
+{% endif %}
+
+<meta name="author" content="{{ site.author }}">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="lt_LT">
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+{% else %}
+  <meta property="og:title" content="{{ site.title }}">
+{% endif %}
+{% if page.description %}
+  <meta property="og:description" content="{{ page.description }}">
+{% elsif page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+{% else %}
+  <meta property="og:description" content="{{ site.description }}">
+{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+{% if page.layout == "post" %}
+  <meta property="og:type" content="article">
+{% else %}
+  <meta property="og:type" content="website">
+{% endif %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
