@@ -11,7 +11,7 @@ title: Bendraukime
 
 **Adresas:** Palangos g. 4, Vilnius, LT-01402
 
-## Kaip atvykti?
+## Kaip atvykti? {#kaip-atvykti}
 
 [Peržiūrėti žemėlapyje](https://www.google.com/maps/place/Palangos+g.+4,+Vilnius+01402)
 
