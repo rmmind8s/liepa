@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Naujienos
+title: Aktualijos
 ---
 
 {% for post in site.posts %}

@@ -121,29 +121,45 @@ body {
 /* ── COMMON PAGES ─────────────────────────────────── */
 
 .site-header {
-  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: #fff;
   border-bottom: 1px solid #e8edf5;
 }
 
-.site-header nav {
+.site-logo img {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.site-nav {
   display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.site-header nav a {
+.site-nav a {
   text-decoration: none;
-  color: #1a3a6b;
-  font-size: 0.95rem;
+  color: #3a3a3a;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.45rem 1rem;
-  border-radius: 6px;
-  transition: background 0.2s, color 0.2s;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  letter-spacing: 0.01em;
+  transition: color 0.2s, background 0.2s;
 }
 
-.site-header nav a:hover {
-  background: #1a3a6b;
-  color: #fff;
+.site-nav a:hover {
+  color: #8193a1;
+  background: #f4f6f8;
+}
+
+.site-nav a.active {
+  color: #8193a1;
 }
 
 main {
