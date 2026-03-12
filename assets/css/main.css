@@ -152,12 +152,14 @@ article h3 {
   margin-bottom: 0.5em;
 }
 
-article a {
+article a,
+main a {
   color: #8193a1;
   border-bottom: 2px solid #8193a1;
 }
 
-article a:hover {
+article a:hover,
+main a:hover {
   color: #495762;
   border-bottom-color: #495762;
 }
