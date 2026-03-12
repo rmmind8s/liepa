@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -6,122 +6,59 @@
   padding: 0;
 }
 
+/* ── TIPOGRAFIJA ──────────────────────────────────── */
+
 body {
-  font-family: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
-  background: #fff;
-  color: #1a1a2e;
-}
-
-/* ── HERO ─────────────────────────────────────────── */
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #495762;
   background: #fff;
 }
 
-.hero__nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1.5rem 3rem;
-  gap: 0.5rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #495762;
+  margin-bottom: 15px;
 }
 
-.hero__nav a {
+h1 { font-size: 3.125em; }
+h2 { font-size: 2.375em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1em; }
+h6 {
+  font-size: 0.8125em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+a {
+  color: #495762;
   text-decoration: none;
-  color: #1a3a6b;
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.5rem 1.1rem;
-  border-radius: 6px;
-  transition: background 0.2s, color 0.2s;
-  letter-spacing: 0.02em;
 }
 
-.hero__nav a:hover {
-  background: #1a3a6b;
-  color: #fff;
+a:hover, a:focus {
+  color: #8193a1;
 }
 
-.hero__nav a.active {
-  background: #1a3a6b;
-  color: #fff;
+ul, ol {
+  padding-left: 1.6em;
+  margin-bottom: 1.6em;
 }
 
-.hero__body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
-  gap: 2.5rem;
+li {
+  margin-bottom: 0.4em;
 }
 
-.hero__logo {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-}
-
-.hero__divider {
-  width: 60px;
-  height: 3px;
-  background: #1a3a6b;
-  border-radius: 2px;
-}
-
-.hero__tagline {
-  font-size: 1.1rem;
-  color: #555;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-
-.hero__cta {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.hero__cta a {
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.75rem 2rem;
-  border-radius: 8px;
-  letter-spacing: 0.03em;
-  transition: all 0.2s;
-}
-
-.hero__cta a.btn-primary {
-  background: #1a3a6b;
-  color: #fff;
-  border: 2px solid #1a3a6b;
-}
-
-.hero__cta a.btn-primary:hover {
-  background: #122d56;
-  border-color: #122d56;
-}
-
-.hero__cta a.btn-secondary {
-  background: transparent;
-  color: #1a3a6b;
-  border: 2px solid #1a3a6b;
-}
-
-.hero__cta a.btn-secondary:hover {
-  background: #1a3a6b;
-  color: #fff;
-}
-
-/* ── COMMON PAGES ─────────────────────────────────── */
-
+/* ── HEADER ───────────────────────────────────────── */
 
 .site-header {
   background: #fff;
@@ -141,13 +78,13 @@ body {
 }
 
 .site-description {
+  color: #495762;
+  margin-bottom: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
   font-weight: 400;
+  font-size: 12px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #495762;
-  margin-top: 0.6em;
 }
 
 .main-navigation {
@@ -186,11 +123,66 @@ body {
   border-bottom-color: currentColor;
 }
 
+/* ── TURINYS ──────────────────────────────────────── */
+
+.site-content {
+  padding: 1.6em 2.5% 0;
+}
+
 main {
   max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-  line-height: 1.75;
+  margin: 2.5em auto;
+  padding: 0 1.6em;
+}
+
+article h1 {
+  font-size: 2.1875em;
+  margin-bottom: 0.8em;
+}
+
+article h2 {
+  font-size: 1.5em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+article h3 {
+  font-size: 1.2em;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+article a {
+  color: #8193a1;
+  border-bottom: 2px solid #8193a1;
+}
+
+article a:hover {
+  color: #495762;
+  border-bottom-color: #495762;
+}
+
+/* ── AKTUALIJŲ SĄRAŠAS ────────────────────────────── */
+
+.post-list h2 {
+  font-size: 1.5625em;
+  margin-bottom: 0.3em;
+}
+
+.post-list h2 a {
+  color: #495762;
+  text-decoration: none;
+}
+
+.post-list h2 a:hover {
+  color: #8193a1;
+}
+
+.post-list .post-excerpt {
+  color: #9c9c9c;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
 }
 
 /* ── FOOTER ───────────────────────────────────────── */
@@ -243,6 +235,7 @@ main {
 .widget-area ul li a {
   text-decoration: none;
   color: #9da4aa;
+  font-family: 'Merriweather', serif;
   font-size: 13px;
   transition: color 0.2s;
 }
@@ -254,6 +247,7 @@ main {
 .site-info {
   background: #fff;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: #9da4aa;
   padding: 1%;
